@@ -1,7 +1,7 @@
 ---
 - name: Configure Oracle Linux 7.1 with WebLogic 12c R2 domain
   hosts: weblogic
-  sudo: True
+  become: true
   vars_files:
     # User defined variables for infrastructure
     - infra-vars.yml
